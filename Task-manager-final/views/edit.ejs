@@ -6,8 +6,11 @@
     <!-- we call for post request but it gets overrides to PUT request -->
     <form action="/tasks/<%= task._id %>?_method=PUT" method="POST" class="ui form">
         <div class="field">
+            <p>TITLE:</p>
             <input type="text" name="task[title]" value="<%= task.title %>">
+            <p style="padding-top: 6px ;">PRIORITY:</p>
             <input type="text" name="task[priority]" value="<%= task.priority %>">
+            <P style="padding-top: 6px ;">DESCRIBTION:</P>
             <textarea name="task[description]" placeholder="describe your task here..." required cols="30" rows="10"><%=task.description%></textarea>
             <input class="ui green basic button" type="Submit">
             

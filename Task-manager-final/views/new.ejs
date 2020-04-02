@@ -4,9 +4,11 @@
     <div class="ui huge header">New Task</div>
     <form action="/tasks" method="POST" class="ui form">
         <div class="field">
+            <p>TITLE:</p>
             <input class="new" type="text" name="task[title]" placeholder="Title">
+            <p style="padding-top: 6px ;">PRIORITY:</p>
             <input class="new" type="text" name="task[priority]" placeholder="Set Priority- HIGH/ MEDIUM/ LOW">
-
+            <P style="padding-top: 6px ;">DESCRIBTION:</P>
             <textarea class="new" name="task[description]" placeholder="Describe your task here..." required cols="30" rows="10"></textarea>
             <input class="ui green basic button" type="Submit">
         </div>
