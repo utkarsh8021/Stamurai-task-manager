@@ -1,0 +1,18 @@
+<%- include("partials/header") %>
+
+<div class="ui main text container segment">
+    <div class="ui huge header">New Task</div>
+    <form action="/tasks" method="POST" class="ui form">
+        <div class="field">
+            <input class="new" type="text" name="task[title]" placeholder="Title">
+            <input class="new" type="text" name="task[priority]" placeholder="Set Priority- HIGH/ MEDIUM/ LOW">
+
+            <textarea class="new" name="task[description]" placeholder="Describe your task here..." required cols="30" rows="10"></textarea>
+            <input class="ui green basic button" type="Submit">
+        </div>
+    
+    </form>
+</div>
+
+<%- include("partials/footer") %>
+

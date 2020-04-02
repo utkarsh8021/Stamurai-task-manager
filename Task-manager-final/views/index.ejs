@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+
+<h1 id="mainheading">TASK MANAGER</h1>
+
+<!-- <%= tasks %> -->
+    
+    <% tasks.forEach(function(task){ %>
+        <div class="ui segment" >
+            <h1><%=task.title%></h1>
+            <p><p style="font-weight: bold">PRIORITY-</p><%=task.priority%></p>
+            <p><p style="font-weight: bold">DESCRIPTION-</p><%=task.description.substring(0,100)%>...</p>
+            <a href="/tasks/<%= task._id %>">Read More</a>
+        </div> 
+        
+    <% }) %>
+
+<%- include('partials/footer') %>
+
+
+

@@ -1,0 +1,19 @@
+<%- include ('partials/header') %>
+
+<div class="ui main text container segment">
+    <div class="ui huge header" id="tasktitle"><%= task.title %></div>
+    <p><%=task.priority%></p>
+    <p><%=task.description%></p>
+    <span><%=task.created%></span>
+</div>
+
+
+
+    <a class="ui blue button  " href="/tasks/<%=task._id%>/edit">Edit</a>
+    <form style="display: inline;" action="/tasks/<%=task._id %>?_method=DELETE" method="post">
+        <button class="ui red button  ">Delete</button>
+    </form>
+
+    
+<%- include ('partials/footer') %>
+
