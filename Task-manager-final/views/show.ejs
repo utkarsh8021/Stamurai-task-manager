@@ -6,7 +6,7 @@
     <p><%=task.description%></p>
     <span><%=task.created%></span>
 
-    <div>
+    <div style="padding-top: 3rem;">
         <a class="ui blue button  " href="/tasks/<%=task._id%>/edit">Edit</a>
     <form style="display: inline;" action="/tasks/<%=task._id %>?_method=DELETE" method="post">
         <button class="ui red button  ">Delete</button>
@@ -16,10 +16,7 @@
 
 
 
-    <a class="ui blue button  " href="/tasks/<%=task._id%>/edit">Edit</a>
-    <form style="display: inline;" action="/tasks/<%=task._id %>?_method=DELETE" method="post">
-        <button class="ui red button  ">Delete</button>
-    </form>
+    
 
     
 <%- include ('partials/footer') %>
